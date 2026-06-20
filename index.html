@@ -1,23 +1,95 @@
 <!doctype html>
-<html>
+<html lang="it">
 <head>
 <meta charset="utf-8" />
-<title>Template Web Design</title>
-<meta name="description" content="Descrizione della pagina" />
-<meta name="keywords" content="keyword, keyword2,keyword3" />
+<title>Indicazioni</title>
+<meta name="description" content="Indicazioni per gli ospiti" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Oooh+Baby&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" />
-
-
 </head>
 <body>
-    <h1>Benvenuti</h1>
 
+    <header class="hero">
+        <h1 class="hero__title">Gabriele e Laura</h1>
+        <h3>27 Giugno 2026</h3>
+        <p class="hero__subtitle">Tutte le informazioni di cui hai bisogno</p>
+    </header>
 
+    <main class="sections">
 
+        <!-- 1. Informazioni generiche -->
+        <section class="card card--coral">
+            <div class="card__icon">&#9432;</div>
+            <h2 class="card__title">Informazioni generiche</h2>
+            <div class="card__body">
+                <p>Inserisci qui le informazioni generali per gli ospiti.</p>
+                <ul>
+                    <li>Punto 1</li>
+                    <li>Punto 2</li>
+                    <li>Punto 3</li>
+                </ul>
+            </div>
+        </section>
 
-    
- <!-- fine pagina    -->
+        <!-- 2. Cronoprogramma -->
+        <section class="card card--teal">
+            <div class="card__icon">&#128336;</div>
+            <h2 class="card__title">Cronoprogramma</h2>
+            <div class="card__body">
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <span class="timeline__time">00:00</span>
+                        <span class="timeline__event">Evento</span>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">00:00</span>
+                        <span class="timeline__event">Evento</span>
+                    </div>
+                    <div class="timeline__item">
+                        <span class="timeline__time">00:00</span>
+                        <span class="timeline__event">Evento</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Informazioni extra -->
+        <section class="card card--yellow">
+            <div class="card__icon">&#10024;</div>
+            <h2 class="card__title">Informazioni extra</h2>
+            <div class="card__body">
+                <p>Inserisci qui tutte le informazioni aggiuntive utili.</p>
+                <ul>
+                    <li>Punto 1</li>
+                    <li>Punto 2</li>
+                    <li>Punto 3</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. Per chi soggiorna in struttura -->
+        <section class="card card--mint">
+            <div class="card__icon">&#127968;</div>
+            <h2 class="card__title">Per chi soggiorna in struttura</h2>
+            <div class="card__body">
+                <p>Informazioni dedicate a chi pernotta nella struttura.</p>
+                <ul>
+                    <li>Check-in: —</li>
+                    <li>Check-out: —</li>
+                    <li>Punto 3</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Con amore &#10084;</p>
+    </footer>
+
 </body>
 </html>

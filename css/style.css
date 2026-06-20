@@ -23,7 +23,184 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 button{ border: none;}
-/* write your code below */
-body{
-   background-color: pink;
+
+/* ===== CUSTOM STYLES ===== */
+
+:root {
+    --color-coral:  #FFFBF0;
+    --color-teal:   #FFF;
+    --color-yellow: #FFFBF0;
+    --color-mint:   #FFF;
+
+    --font-display: 'Oooh Baby', cursive;
+    --font-body:    'Kameron', serif;
+}
+
+/* ---- Base ---- */
+body {
+    font-family: var(--font-body);
+    background-color: #faf7f2;
+    color: #2B5530;
+    line-height: 1.6;
+}
+h2, h3{
+   color: #94AE12;
+}
+/* ---- Hero ---- */
+.hero {
+    background-color: #FFF2CF;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    background-position: center -100px;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    color: #2B5530;
+    text-align: center;
+    padding: 3rem 1.5rem 2.5rem;
+}
+
+.hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 12vw, 6rem);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.hero__subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+    margin-top: 0.75rem;
+    opacity: 0.75;
+}
+
+/* ---- Sections container ---- */
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* ---- Cards ---- */
+.card {
+    padding: 2.5rem 1.5rem;
+    position: relative;
+}
+
+.card--coral  { background-color: var(--color-coral);  color: #2B5530; }
+.card--teal   { background-color: var(--color-teal);   color: #2B5530; }
+.card--yellow { background-color: var(--color-yellow); color: #2B5530; }
+.card--mint   { background-color: var(--color-mint);   color: #2B5530; }
+
+.card__icon {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.card__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+.card__body {
+    font-family: var(--font-body);
+    font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+    max-width: 600px;
+}
+
+.card__body p {
+    margin-bottom: 0.75rem;
+}
+
+.card__body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card__body ul li {
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.card--coral  ul li { background-color: rgba(255,255,255,0.2); }
+.card--teal   ul li { background-color: rgba(255,255,255,0.2); }
+.card--yellow ul li { background-color: rgba(0,0,0,0.08); }
+.card--mint   ul li { background-color: rgba(255,255,255,0.2); }
+
+/* ---- Timeline (Cronoprogramma) ---- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.timeline__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+.timeline__time {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    min-width: 3.5rem;
+    opacity: 0.95;
+}
+
+.timeline__event {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+}
+
+/* ---- Footer ---- */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #FFF2CF;
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: #2B5530;
+}
+
+.footer__text {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+}
+
+/* ---- Responsive: tablet / desktop ---- */
+@media (min-width: 640px) {
+    .card {
+        padding: 3.5rem 3rem;
+    }
+
+    .sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card__body ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card__body ul li {
+        flex: 1 1 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sections {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
