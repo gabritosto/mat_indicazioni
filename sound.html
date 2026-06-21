@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<title>Music for the DJ – Laura e Gabriele</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Oooh+Baby&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+<style>
+    .place__subtitle { font-family: 'Kameron', serif; color: #2B5530; }
+    .time-range {
+        font-family: 'Kameron', serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        opacity: 0.65;
+        margin-left: 0.4em;
+    }
+
+    /* ---- Nav ---- */
+    .sound-nav {
+        display: flex;
+        overflow-x: auto;
+        background-color: #222;
+        scrollbar-width: none;
+    }
+    .sound-nav::-webkit-scrollbar { display: none; }
+
+    .sound-nav__btn {
+        flex: 1 0 auto;
+        font-family: 'Kameron', serif;
+        font-size: 1rem;
+        padding: 0.85rem 1.25rem;
+        background: none;
+        color: rgba(255,255,255,0.5);
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        white-space: nowrap;
+        transition: color 0.2s, border-color 0.2s;
+    }
+    .sound-nav__btn:hover { color: #fff; }
+    .sound-nav__btn.active {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    /* ---- Sottopagine ---- */
+    .sound-page { display: none; }
+    .sound-page.active { display: block; }
+
+    .sound-page .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sound-page .card__body {
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+    <header class="hero">
+        <p class="hero__subtitle">Laura e Gabriele · 27 Giugno 2026</p>
+        <h1 class="hero__title">Music for the DJ</h1>
+        <p class="hero__subtitle">&#128009; Drago, queste sono le nostre richieste</p>
+    </header>
+
+    <nav class="sound-nav">
+        <button class="sound-nav__btn active" data-target="extra">Extra</button>
+        <button class="sound-nav__btn" data-target="lounge">Lounge</button>
+        <button class="sound-nav__btn" data-target="aperitivo">Aperitivo</button>
+        <button class="sound-nav__btn" data-target="disco">Disco</button>
+    </nav>
+
+    <main>
+
+        <!-- Extra -->
+        <div id="extra" class="sound-page active">
+            <section class="card card--coral">
+                <div class="card__icon">&#127925;</div>
+                <h2 class="card__title">Extra <a style="font-size: 16px; font-family: 'Kameron', serif;" href="https://open.spotify.com/playlist/5YlCEdTTz4MNL5d6wIKUEn?si=946b2c3800ba4164" target="_blank">link alla playlist completa </a></h2>
+                <div class="card__body">
+
+                    <div class="place">
+                        <h3 class="place__subtitle">Entrata sposo <span class="time-range">15.30</span></h3>
+                        <iframe src="https://open.spotify.com/embed/track/6E4ZPXz34YTAObmBrqquGo" width="100%" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="place">
+                        <h3 class="place__subtitle">Entrata sposa <span class="time-range">15.45 - Da sfumare quando arriva all'altare</span></h3>
+                        <audio controls style="width:100%; margin-top:0.5rem;">
+                            <source src="media/back.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="place">
+                        <h3 class="place__subtitle">Momento del "Si"<span class="time-range">..riprendere canzone sfumata, verso 2.10 min</span></h3>
+                        <audio controls style="width:100%; margin-top:0.5rem;">
+                            <source src="media/back.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="place">
+                        <h3 class="place__subtitle">Taglio torta <span class="time-range">21.30 circa</span></h3>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3Fir7mQTzYE0A6SGAWKC2l?utm_source=generator&si=2f031fc1b6ec46e5" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                    </div>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4uOW3Ae6SgpX556DXsDMzs?utm_source=generator&si=0d1ec35bc37d4c1f" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="place">
+                        <h3 class="place__subtitle">Ballo 1 <span class="time-range">Scegli te</span></h3>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0kYQPSgdGDJ8nhaXMjqhSu?utm_source=generator&si=105dcecf30554b47" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="place">
+                        <h3 class="place__subtitle">Ballo 2 <span class="time-range">Scegli te</span></h3>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5GpfyJrKHJI36jDKtQiyGN?utm_source=generator&si=3fb8be6272674f86" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <!-- Lounge -->
+        <div id="lounge" class="sound-page">
+            <section class="card card--teal">
+                <div class="card__icon">&#127774;</div>
+                <h2 class="card__title">Lounge <span class="place__subtitle"> - 15.00–18.00</span></h2>
+                <div class="card__body">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5wVvBcQ7nrYoH7O9fkoK5U?utm_source=generator&si=db646b51cee94ad1" width="100%" height="700" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aperitivo -->
+        <div id="aperitivo" class="sound-page">
+            <section class="card card--yellow">
+                <div class="card__icon">&#127863;</div>
+                <h2 class="card__title">Aperitivo <span class="place__subtitle"> - 18.00–22.30</span></h2>
+                <div class="card__body">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3zVJu5ZjTpttaHdACj8N2a?utm_source=generator&si=9294cb776d194b2e" width="100%" height="700" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- Disco -->
+        <div id="disco" class="sound-page">
+            <section class="card card--mint">
+                <div class="card__icon">&#128248;</div>
+                <h2 class="card__title">Disco <span class="place__subtitle"> - 22.30–01.00</span></h2>
+                <div class="card__body">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/07exyTaNGhUDvC7Wgqghd2?utm_source=generator&si=58a1e09bab764c53" width="100%" height="700" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Con amore &#10084;</p>
+    </footer>
+
+    <script>
+        const btns = document.querySelectorAll('.sound-nav__btn');
+        const pages = document.querySelectorAll('.sound-page');
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                btns.forEach(b => b.classList.remove('active'));
+                pages.forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.target).classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
