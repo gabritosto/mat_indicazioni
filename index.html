@@ -41,14 +41,14 @@
             <div class="card__body">
 
                 <div class="place">
-                    <h3 class="place__subtitle">La cerimonia e il rinfresco</h3>
+                    <h3 class="place__subtitle">La cerimonia e il ricevimento</h3>
                     <p class="place__address">Associazione Villaggio Globale, Bagni di Lucca<br>Via Demidoff, 1, 55022 Bagni di Lucca LU</p>
                     <div class="map-wrap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d645.3220678201035!2d10.578658075104743!3d44.01222520559096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d57dae5dd54c5b%3A0xd27334c991e60a9e!2sAssociazione%20Villaggio%20Globale!5e1!3m2!1sit!2sit!4v1781974722564!5m2!1sit!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
-                <div class="place">
+                <div class="place" id="parcheggio">
                     <h3 class="place__subtitle">Il parcheggio - 6 minuti a piedi</h3>
                     <p class="place__address">Piazza Longarone, 55022 Bagni di Lucca LU</p>
                     <div class="map-wrap">
@@ -69,8 +69,8 @@
                         <span class="timeline__time">13:30 – 15:15</span>
                         <span class="timeline__event">Accoglienza ospiti nella villa</span>
                     </div>
-                    <div class="timeline__item">
-                        <span class="timeline__time">15:30</span>
+                    <div class="timeline__item timeline__item--hero">
+                        <span class="timeline__time timeline__event">15:30</span>
                         <span class="timeline__event">Inizio cerimonia</span>
                     </div>
                     <div class="timeline__item">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="timeline__item">
                         <span class="timeline__time">19:30</span>
-                        <span class="timeline__event">Apertura buffet cena nel giardino</span>
+                        <span class="timeline__event">Cena a buffet nel giardino</span>
                     </div>
                     <div class="timeline__item">
                         <span class="timeline__time">21:30</span>
@@ -103,13 +103,13 @@
             <h2 class="card__title">Informazioni extra</h2>
             <div class="card__body">
                 <ul>
-                    <li>&#128697; Non è possibile parcheggiare lungo la villa, nè lungo il vialetto che porta ad essa</li>
+                    <li>&#128697; Non è possibile parcheggiare davanti alla villa, né lungo il vialetto che porta ad essa</li>
                     <li>&#127940; Portatevi un costume e un telo: potete godervi le terme della struttura e, per i più temerari, fare un bagno al fiume sotto il ponticello!</li>
                     <li>&#127775; Il celebrante è il mitico e ineguagliabile <a href="https://www.villaggioglobale.eu/chi-siamo/docenti-e-trainer/" target="_blank" rel="noopener">Nitamo Montecucco</a>.</li>
-                    <li>&#129463; Potete portarvi le ciabatte per essere comodi sul prato e negli ambienti di relax.</li>
+                    <li>&#127958; Potete portarvi le ciabatte per essere comodi sul prato e negli ambienti di relax.</li>
                     <li>&#127860; La cena è in formato Buffet con 3 ottimi menu di cui uno vegano. Non ci sono tavoli fissi: parlate con chi volete!</li>
                     <li>&#128247; ⁠Volete aiutarci a immortalare momenti preziosi? Scaricate l'app <strong>Wedshot</strong> (<a href="https://apps.apple.com/es/app/wedshoots/id660256196" target="_blank" rel="noopener">iOS</a> · <a href="https://play.google.com/store/apps/details?id=net.bodas.android.wedshoots&referrer=pid%3DWP-Android-IT%26c%3DWP-IT-LANDINGS%26af_tranid%3DMTI3OTQzOTQ0NTMzNzEwNzgyNTM%3D&pli=1" target="_blank" rel="noopener">Android</a>) e inserite il codice: <strong>ITecaf221c</strong></li>
-                    <li>&#128009; Il DJ si chiama <strong><a href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21zYWZhMmRhZXY0a2V6NzN6NnRqZHp6NWkyaGwyZmQ1Y2Ftd3ZoaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/B3hiKKhtzinMNkOYSc/giphy.gif">Drago</a></strong>. Occhio a non farlo arrabbiare!</li>
+                    <li>&#128009; Il DJ si chiama <strong><a target="_blank" href="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb21zYWZhMmRhZXY0a2V6NzN6NnRqZHp6NWkyaGwyZmQ1Y2Ftd3ZoaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/B3hiKKhtzinMNkOYSc/giphy.gif">Drago</a></strong>. Occhio a non farlo arrabbiare!</li>
                 </ul>
             </div>
         </section>
@@ -121,9 +121,9 @@
             <div class="card__body">
                 <ul>
                     <li>&#128075; All'ingresso troverete chi vi accoglierà e vi indicherà la vostra stanza.</li>
-                    <li>&#128664; Potete parcheggiare davanti alla villa per scaricare; dopo vi chiediamo di spostare la macchina entro le 15:00, nel parcheggio indicato.</li>
+                    <li>&#128664; Potete sostare in auto davanti alla villa per scaricare i bagagli; dopo vi chiediamo di spostare la macchina entro le 15:00, <a href="#parcheggio">nel parcheggio indicato</a>.</li>
                     <li>&#128716; I letti saranno preparati con lenzuola, cuscino, federa e coperta — non è necessario portare il sacco a pelo!</li>
-                    <li>&#128716; Vi chiediamo di portarvi da casa:fon, asciugamano e bagnoschiuma</li>
+                    <li>&#129524; Vi chiediamo di portarvi da casa:fon, asciugamano e bagnoschiuma</li>
                 </ul>
             </div>
         </section>

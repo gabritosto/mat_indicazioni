@@ -36,6 +36,11 @@ button{ border: none;}
     --font-body:    'Kameron', serif;
 }
 
+/* ---- Smooth scroll ---- */
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---- Base ---- */
 body {
     font-family: var(--font-body);
@@ -101,7 +106,7 @@ h2, h3{
     font-family: var(--font-display);
     font-size: clamp(2rem, 8vw, 3rem);
     line-height: 1.1;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
 }
 
 .card__body {
@@ -124,11 +129,12 @@ h2, h3{
 .card__body ul li {
     padding: 0.6rem 1rem;
     border-radius: 0.5rem;
+    margin-bottom: 0.7rem;
 }
 
 .card--coral  ul li { background-color: rgba(255,255,255,0.2); }
 .card--teal   ul li { background-color: rgba(255,255,255,0.2); }
-.card--yellow ul li { background-color: rgba(0,0,0,0.08); }
+.card--yellow ul li { background-color: rgba(167, 151, 87, 0.08) }
 .card--mint   ul li { background-color: rgba(255,255,255,0.2); }
 
 /* ---- Link nelle card ---- */
@@ -140,7 +146,7 @@ h2, h3{
 
 /* ---- Luoghi / micro-sezioni ---- */
 .place {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .place__subtitle {
@@ -190,6 +196,32 @@ h2, h3{
     padding: 0.75rem 1rem;
 }
 
+.timeline__item--hero {
+    border: 2px solid rgba(255,255,255,0.7);
+    scale: 1.03;
+    animation: highlight-cycle 3s ease-in-out infinite;
+}
+
+.timeline__item--hero .timeline__time {
+    font-size: 1.15rem;
+}
+
+.timeline__item--hero .timeline__event {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+@keyframes highlight-cycle {
+    0%   { background-color: rgba(255, 230, 80,  0.75); }
+    14%  { background-color: rgba(255, 110, 110, 0.75); }
+    28%  { background-color: rgba(100, 220, 255, 0.75); }
+    42%  { background-color: rgba(100, 255, 160, 0.75); }
+    57%  { background-color: rgba(255, 160, 60,  0.75); }
+    71%  { background-color: rgba(210, 110, 255, 0.75); }
+    85%  { background-color: rgba(80,  210, 180, 0.75); }
+    100% { background-color: rgba(255, 230, 80,  0.75); }
+}
+
 .timeline__time {
     font-family: var(--font-body);
     font-weight: 700;
@@ -226,6 +258,13 @@ h2, h3{
 .footer__text {
     font-family: var(--font-display);
     font-size: 1.8rem;
+}
+
+/* ---- Mobile: hero centrato ---- */
+@media (max-width: 639px) {
+    .hero {
+        background-position: center center;
+    }
 }
 
 /* ---- Responsive: tablet / desktop ---- */
